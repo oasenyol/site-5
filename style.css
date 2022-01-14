@@ -99,7 +99,7 @@ p {
 }
 .section-one-left {
   width: 60%;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .section-one-left h1 {
   color: hsl(229, 31%, 21%);
@@ -148,7 +148,7 @@ p {
 .section-one-right .relative-foto {
   position: relative;
   top: -22%;
-  left: -25%;
+  left: -35%;
 }
 .section-one-right img {
   width: 100%;
@@ -158,4 +158,95 @@ p {
   width: 30%;
   text-align: center;
   margin: auto;
+}
+/*TAB*/
+.tabs {
+  width: 100%;
+  padding-top: 50px;
+}
+.tabs .tab-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+.tabs .tab-header > div {
+  text-align: center;
+  padding: 30px;
+  color: hsl(229, 8%, 60%);
+  cursor: pointer;
+}
+.tabs .tab-header > div:hover {
+  color: hsl(0, 94%, 66%);
+}
+.tabs .tab-header > div.active {
+  border-bottom: 3px solid hsl(0, 94%, 66%);
+  color: black;
+}
+.tabs .tab-body .tab-one {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tabs .tab-body .tab-one .tab-one-left {
+  background: hsl(231, 69%, 60%);
+  border-bottom-right-radius: 200px;
+  width: 40%;
+}
+.tabs .tab-body .tab-one .duzen-one {
+  position: relative;
+  top: -20%;
+  left: 40%;
+}
+.tabs .tab-body .tab-one .duzen-two {
+  top: -20%;
+  left: 50%;
+}
+.tabs .tab-body .tab-one .duzen-three {
+  left: 50%;
+  top: -25%;
+}
+.tabs .tab-body img {
+}
+.tab-info {
+  width: 45%;
+  padding-left: 250px;
+}
+.tab-info p {
+  padding-bottom: 20px;
+}
+.tab-info button {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 30px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+}
+.tab-info button:hover {
+  background-color: #fff;
+  border: 3px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+.tabs .tab-indicator {
+}
+.tabs .tab-body {
+  position: relative;
+  height: calc(100% - 50px);
+  width: 100%;
+}
+.tabs .tab-body > div {
+  position: absolute;
+  opacity: 0;
+  top: -100%;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.tabs .tab-body > div.active {
+  top: 30px;
+  opacity: 1;
 }
