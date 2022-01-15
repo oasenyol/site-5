@@ -163,6 +163,7 @@ p {
 .tabs {
   width: 100%;
   padding-top: 50px;
+  height: 800px;
 }
 .tabs .tab-header {
   display: flex;
@@ -171,6 +172,8 @@ p {
   padding-bottom: 150px;
 }
 .tabs .tab-header > div {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding: 30px;
   color: hsl(229, 8%, 60%);
@@ -203,10 +206,8 @@ p {
   left: 50%;
 }
 .tabs .tab-body .tab-one .duzen-three {
-  left: 50%;
   top: -25%;
-}
-.tabs .tab-body img {
+  left: 50%;
 }
 .tab-info {
   width: 45%;
@@ -232,8 +233,6 @@ p {
   color: hsl(231, 69%, 60%);
   cursor: pointer;
 }
-.tabs .tab-indicator {
-}
 .tabs .tab-body {
   position: relative;
   height: calc(100% - 50px);
@@ -249,4 +248,106 @@ p {
 .tabs .tab-body > div.active {
   top: 30px;
   opacity: 1;
+}
+.scanners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  padding-bottom: 100px;
+  margin: auto;
+  height: 600px;
+}
+@media screen and (min-width: 1367px) {
+  .scanners {
+    width: 55%;
+  }
+}
+.sc-container {
+  text-align: center;
+  box-shadow: 0px 10px 13px 1px rgba(219, 219, 219, 1);
+  padding: 50px 0;
+  border-radius: 15px;
+}
+.sc-btn {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 20px;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+}
+.sc-btn:hover {
+  background-color: #fff;
+  border: 3px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+.dot-img {
+  padding-bottom: 15px;
+}
+.firefox {
+  position: relative;
+  top: 5%;
+}
+.opera {
+  position: relative;
+  top: 10%;
+}
+.accordion-menu {
+  width: 35%;
+  margin: auto;
+  padding-top: 50px;
+}
+.accordion {
+  background-color: transparent;
+  background-image: url("images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid #ccc;
+  outline: none;
+}
+.accordion:hover {
+  color: hsl(0, 94%, 66%);
+}
+.last-acc {
+  border-bottom: 1px solid #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.acc-btn {
+  padding-top: 50px;
+}
+.acc-btn button {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 18px 30px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: auto;
+}
+.acc-btn button:hover {
+  background-color: #fff;
+  border: 3px solid hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  cursor: pointer;
 }
