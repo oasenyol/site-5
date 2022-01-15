@@ -100,6 +100,7 @@ p {
 .section-one-left {
   width: 60%;
   padding-left: 100px;
+  z-index: 2;
 }
 .section-one-left h1 {
   color: hsl(229, 31%, 21%);
@@ -164,6 +165,7 @@ p {
   width: 100%;
   padding-top: 50px;
   height: 800px;
+  position: relative;
 }
 .tabs .tab-header {
   display: flex;
@@ -243,7 +245,6 @@ p {
   opacity: 0;
   top: -100%;
   transform: translateY(-10px);
-  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 .tabs .tab-body > div.active {
   top: 30px;
