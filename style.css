@@ -37,8 +37,12 @@ p {
   align-items: center;
   padding-top: 20px;
 }
+.mobil-link {
+  display: none;
+}
 .nav-linkler {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .nav-linkler li {
@@ -108,6 +112,12 @@ p {
 .section-one-left p {
   width: 50%;
   padding-bottom: 10px;
+}
+.section-one-left-btn {
+  display: flex;
+}
+.pad-div {
+  padding-right: 15px;
 }
 .section-one-left .blue-btn {
   background-color: hsl(231, 69%, 60%);
@@ -361,6 +371,15 @@ p {
   text-align: center;
   width: 100%;
 }
+.contact-container .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .mail .mail-btn {
+  padding-left: 15px;
+}
 .contact-container button {
   background-color: hsl(0, 94%, 66%);
   color: #fff;
@@ -423,4 +442,252 @@ p {
 }
 .footer-right a {
   padding-right: 25px;
+}
+@media only screen and (max-width: 1270px) {
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 12px;
+  }
+  .nav-container {
+    width: 100%;
+    z-index: 3;
+    position: relative;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 50px;
+    background-color: #2f354f;
+    opacity: 96%;
+    width: 100%;
+    border-radius: 15px;
+    height: calc(120vh - 100px);
+    transform: translateY(120%);
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  .mobil-link {
+    display: block;
+    padding-top: 150px;
+  }
+  .mobil-link a {
+    padding-right: 30px;
+  }
+  .nav-linkler button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding: 12px 120px;
+    margin-right: 40px;
+    letter-spacing: 3px;
+  }
+  .navbar li {
+    padding-bottom: 70px;
+  }
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+  .nav-item a {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .nav-item a:hover {
+    color: black;
+  }
+  .menu-toggle,
+  .line {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    transform: translate(0%) !important;
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .navbar .logo img {
+    width: 95%;
+    padding-right: 100px;
+  }
+  .section-one {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .section-one-right {
+    width: 100%;
+    border-top-left-radius: 200px;
+    position: relative;
+  }
+  .section-one-right img {
+    width: 100%;
+  }
+  .section-one-right .relative-foto {
+    position: relative;
+    left: 0%;
+  }
+  .section-one-left {
+    width: 90%;
+    padding-left: 0px;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+  }
+  .section-one-left p {
+    margin: auto;
+    width: 90%;
+  }
+  .section-one-left .section-one-left-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .section-one-left .blue-btn {
+    padding: 16px 22px;
+  }
+  .section-one-left .gray-btn {
+    padding: 16px 22px;
+  }
+  .pad-div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .slider-info {
+    width: 80%;
+  }
+  .tabs .tab-header {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .tabs .tab-body .tab-one .tab-one-left {
+    width: 70%;
+  }
+  .tabs .tab-body .tab-one {
+    flex-direction: column;
+  }
+  .tab-info {
+    width: 90%;
+    padding-left: 0px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .tab-info button {
+    display: none;
+  }
+  .tabs .tab-body .tab-one .duzen-one {
+    width: 90%;
+    height: 100%;
+    left: 30%;
+  }
+  .sc-btn {
+    padding: 18px 53px;
+  }
+  .sc-pad {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .accordion-menu {
+    width: 90%;
+  }
+  .accordion-menu button {
+    font-size: 15px;
+  }
+  .contact h2 {
+    width: 90%;
+  }
+  .contact h3 {
+    font-size: 12px;
+    width: 75%;
+    margin: auto;
+  }
+  .contact-container input {
+    padding: 15px 75px;
+  }
+  .contact-container .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+  }
+  .mail-btn {
+    padding-top: 15px;
+  }
+  .contact-container .mail .mail-btn {
+    padding-left: 0px;
+  }
+  .contact-container button {
+    padding: 15px 122px;
+  }
+  .scanners {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .firefox {
+    position: relative;
+    top: 0%;
+  }
+  .opera {
+    position: relative;
+    top: 0%;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer ul {
+    padding-left: 0px;
+  }
+  .footer .nav-linkler li {
+    padding-right: 0px;
+    padding-top: 30px;
+  }
+  .footer .nav-linkler a {
+    color: hsl(229, 8%, 60%);
+  }
+  .footer-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-right {
+    padding-top: 5px;
+  }
+  .footer .nav-linkler-responsive {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-right a:nth-child(2) {
+    padding-right: 0px;
+  }
+  .footer .nav-item a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .section-one {
+    padding-top: 20px;
+  }
+  .section-one-left h1 {
+    font-size: 19px;
+  }
 }

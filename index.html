@@ -16,7 +16,7 @@
   <header>
     <div class="nav-container">
       <nav class="navbar">
-        <a href=""><img src="images/logo-bookmark.svg" alt=""></a>
+        <a class="logo" href=""><img src="images/logo-bookmark.svg" alt=""></a>
         <div class="menu-toggle" id="mobile-menu">
           <span class="line"></span>
           <span class="line"></span>
@@ -27,6 +27,10 @@
           <li class="nav-item"><a href="#">PRICING</a></li>
           <li class="nav-item"><a href="#">CONTACT</a></li>
           <button>LOGIN</button>
+          <div class="mobil-link">
+            <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+            <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+          </div>
         </ul>
       </nav>
     </div>
@@ -36,8 +40,11 @@
       <h1>A Simple Bookmark Manager</h1>
       <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
         load instantly. Try it for free.</p>
-      <button class="blue-btn">Get it on Chrome</button>
-      <button class="gray-btn">Get it on Firefox</button>
+      <div class="section-one-left-btn">
+        <button class="blue-btn">Get it on Chrome</button>
+        <div class="pad-div"></div>
+        <button class="gray-btn">Get it on Firefox</button>
+      </div>
     </div>
     <div class="section-one-right">
       <img src="images/illustration-hero.svg" alt="" class="relative-foto">
@@ -97,31 +104,37 @@
       prioritize.</p>
   </div>
   <div class="scanners">
-    <div class="sc-container chrome">
-      <img src="images/logo-chrome.svg" alt="">
-      <h4>Add to Chrome</h4>
-      <p>Minimum version 62</p>
-      <img src="images/bg-dots.svg" alt="" class="dot-img">
-      <div>
-        <button class="sc-btn">Add & Install Extension</button>
+    <div class="sc-pad">
+      <div class="sc-container chrome">
+        <img src="images/logo-chrome.svg" alt="">
+        <h4>Add to Chrome</h4>
+        <p>Minimum version 62</p>
+        <img src="images/bg-dots.svg" alt="" class="dot-img">
+        <div>
+          <button class="sc-btn">Add & Install Extension</button>
+        </div>
       </div>
     </div>
-    <div class="sc-container firefox">
-      <img src="images/logo-firefox.svg" alt="">
-      <h4>Add to Firefox</h4>
-      <p>Minimum version 55</p>
-      <img src="images/bg-dots.svg" alt="" class="dot-img">
-      <div>
-        <button class="sc-btn">Add & Install Extension</button>
+    <div class="sc-pad">
+      <div class="sc-container firefox">
+        <img src="images/logo-firefox.svg" alt="">
+        <h4>Add to Firefox</h4>
+        <p>Minimum version 55</p>
+        <img src="images/bg-dots.svg" alt="" class="dot-img">
+        <div>
+          <button class="sc-btn">Add & Install Extension</button>
+        </div>
       </div>
     </div>
-    <div class="sc-container opera">
-      <img src="images/logo-opera.svg" alt="">
-      <h4>Add to Opera</h4>
-      <p>Minimum version 49</p>
-      <img src="images/bg-dots.svg" alt="" class="dot-img">
-      <div>
-        <button class="sc-btn">Add & Install Extension</button>
+    <div class="sc-pad">
+      <div class="sc-container opera">
+        <img src="images/logo-opera.svg" alt="">
+        <h4>Add to Opera</h4>
+        <p>Minimum version 49</p>
+        <img src="images/bg-dots.svg" alt="" class="dot-img">
+        <div>
+          <button class="sc-btn">Add & Install Extension</button>
+        </div>
       </div>
     </div>
   </div>
@@ -165,13 +178,15 @@
     <div class="contact-container">
       <h3>35.000 + ALREADY JOINED</h3>
       <h2>Stay up-to-date with what we're doing</h2>
-      <div class="mail"><input type="email" placeholder="Enter your email adress"> <button>Contact Us</button></div>
+      <div class="mail"><input type="email" placeholder="Enter your email adress">
+        <div class="mail-btn"><button>Contact Us</button></div>
+      </div>
     </div>
   </div>
   <div class="footer">
     <div class="footer-left">
       <img src="images/logo-bookmark.svg" alt="">
-      <ul class="nav-linkler">
+      <ul class="nav-linkler nav-linkler-responsive">
         <li class="nav-item"><a href="#">FEATURES</a></li>
         <li class="nav-item"><a href="#">PRICING</a></li>
         <li class="nav-item"><a href="#">CONTACT</a></li>
@@ -183,7 +198,9 @@
     </div>
   </div>
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
   <script src="app.js"></script>
 </body>
 

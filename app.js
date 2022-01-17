@@ -32,3 +32,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+$('.menu-toggle').click(function(){
+  $(".navbar ul").toggleClass("mobile-nav");
+  $(this).toggleClass("is-active");
+});
