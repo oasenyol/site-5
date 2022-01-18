@@ -62,6 +62,7 @@ p {
   border-radius: 5px;
   padding: 12px 42px;
   letter-spacing: 1px;
+  border: 3px solid hsl(0, 94%, 66%);
 }
 .nav-linkler button:hover {
   cursor: pointer;
@@ -122,7 +123,7 @@ p {
 .section-one-left .blue-btn {
   background-color: hsl(231, 69%, 60%);
   color: #fff;
-  border: none;
+  border: 3px solid hsl(231, 69%, 60%);
   border-radius: 5px;
   padding: 18px 30px;
   -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
@@ -138,7 +139,7 @@ p {
 .section-one-left .gray-btn {
   background-color: #f7f7f5;
   color: hsl(229, 31%, 21%);
-  border: none;
+  border: 3px solid #f7f7f5;
   border-radius: 5px;
   padding: 18px 30px;
   -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
@@ -231,7 +232,7 @@ p {
 .tab-info button {
   background-color: hsl(231, 69%, 60%);
   color: #fff;
-  border: none;
+  border: 3px solid hsl(231, 69%, 60%);
   border-radius: 5px;
   padding: 18px 30px;
   font-weight: 400;
@@ -284,7 +285,7 @@ p {
 .sc-btn {
   background-color: hsl(231, 69%, 60%);
   color: #fff;
-  border: none;
+  border: 3px solid hsl(231, 69%, 60%);
   border-radius: 5px;
   padding: 18px 20px;
   -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.3);
@@ -346,7 +347,7 @@ p {
 .acc-btn button {
   background-color: hsl(231, 69%, 60%);
   color: #fff;
-  border: none;
+  border: 3px solid hsl(231, 69%, 60%);
   border-radius: 5px;
   padding: 18px 30px;
   font-weight: 400;
@@ -383,9 +384,9 @@ p {
 .contact-container button {
   background-color: hsl(0, 94%, 66%);
   color: #fff;
-  border: none;
+  border: 3px solid hsl(0, 94%, 66%);
   border-radius: 5px;
-  padding: 12px 25px;
+  padding: 9px 25px;
   letter-spacing: 1px;
 }
 .contact-container button:hover {
@@ -632,7 +633,7 @@ p {
     padding-left: 0px;
   }
   .contact-container button {
-    padding: 15px 122px;
+    padding: 12.5px 119.5px;
   }
   .scanners {
     flex-direction: column;
